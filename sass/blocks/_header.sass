@@ -1,0 +1,70 @@
+.header
+    position: fixed
+    left: 0
+    top: 0
+    width: 100%
+    background: #181818
+    z-index: 2
+    &__container
+        display: flex
+        align-items: center
+        justify-content: space-between
+        max-width: 1070px
+    &__list
+        display: flex
+        align-items: center
+    &__item
+        margin-right: 41px
+        &:last-child
+            margin-right: 0
+    &__link
+        position: relative
+        color: #FFFFFF
+        font-weight: 500
+        transition: opacity .3s ease
+        &::before
+            position: absolute
+            content: ''
+            opacity: 0
+            height: 2px
+            width: 110%
+            bottom: -10px
+            left: 50%
+            transform: translate(-50%, 0)
+            background: #FFFFFF
+            transition: opacity .3s ease
+        &:hover
+            color: #FFFFFF
+            opacity: .8
+            &::before
+                opacity: .8
+    &__burger
+        display: none
+        position: relative
+        flex-direction: column
+        align-items: flex-end
+        justify-content: space-between
+        width: 44px
+        height: 27px
+        cursor: pointer
+        margin-left: 27px
+        order: 1
+        z-index: 4
+        &_active
+            .header__line
+                &:first-child
+                    width: 19px
+                &:last-child
+                    width: 100%
+
+    &__line
+        display: block
+        width: 33px
+        height: 5px
+        background: #FFFFFF
+        transition: width .3s ease
+        &:first-child
+            width: 100%
+        &:last-child
+            width: 19px
+            transition: width .3s ease

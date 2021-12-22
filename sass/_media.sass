@@ -1,0 +1,236 @@
+@media (max-width: 1200px)
+    .features
+        &__wrapper
+            flex-direction: column
+            justify-content: center
+        &__img
+            width: 60%
+        &__blocks
+            width: 100%
+            margin-top: 100px
+            display: flex
+            align-items: center
+            justify-content: space-between
+        &__block
+            margin-top: 0
+        &__header
+            width: auto
+
+    .content
+        &__cards
+            flex-direction: column
+            justify-content: center
+        &__card
+            &:first-child
+                margin: 0
+            &:last-child
+                margin-top: 25px
+
+    .info
+        &__content
+            text-align: center
+        &__title
+            width: 700px
+            margin: 0 auto
+        &__img
+            display: none
+
+@media (max-width: 992px)
+    .title
+        width: auto
+        font-size: 45px
+    .subtitle
+        font-size: 16px
+
+    body
+        position: relative
+
+    .header
+        &__nav
+            display: none
+            position: fixed
+            width: 100%gt
+            height: 100vh
+            top: 0
+            left: 0
+            background: #181818
+            z-index: 3
+        &__list
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            flex-direction: column
+            justify-content: center
+            align-items: center
+        &__item
+            padding: 15px
+            margin: 25px auto 0 auto
+            &:first-child
+                margin-top: 0
+            &:last-child
+                margin: 25px auto 0 auto
+        &__link
+            font-size: 35px
+        &__wrapper
+            display: flex
+            align-items: center
+        &__burger
+            display: flex
+
+    .hero
+        padding: 200px 0 700px 0
+        background-size: 120%
+        &::before
+            background: linear-gradient(180deg, rgba(0,0,0,0) 0%, #0E0E0E 70%)
+        &__subtitle
+            margin-top: 20px
+        &__btns
+            margin-top: 50px
+
+    .features
+        padding: 100px 0 50px 0
+        &__blocks
+            flex-direction: column
+            justify-content: center
+            &-wrapper
+                justify-content: center
+        &__block
+            margin-top: 30px
+            &:first-child
+                margin-top: 0
+        &__descr
+            text-align: center
+
+    .content
+        padding: 50px 0 50px 0
+
+    .gallery
+        padding: 100px 0 50px 0
+
+    .parther
+        padding: 100px 0 50px 0
+        &__wrapper
+            width: 100%
+            flex-direction: column
+            justify-content: center
+        &__link
+            margin-top: 30px
+            &:first-child
+                margin-top: 0
+
+    .testimonial
+        padding: 100px 0 50px 0
+
+    .info
+        padding: 50px 0 50px 0
+
+    .testimonial
+        &__cards
+            grid-template-columns: 430px
+        &__card
+            &:last-child
+                margin: 0
+
+    .info
+        &__content
+            padding: 40px
+        &__title
+            width: auto
+
+    .footer
+        padding: 50px 0 50px 0
+        &__container
+            flex-direction: column
+            align-items: center
+            justify-content: center
+        &__end
+            margin-top: 75px
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+
+@media (max-width: 670px)
+    .subtitle
+        width: auto
+
+@media (max-width: 576px)
+    .btn
+        padding: 10px 30px
+        &_size_l
+            padding: 15px 35px
+
+    .title
+        font-size: 35px
+
+    .hero
+        background-size: 200%
+
+    .content
+        &__img
+            width: 100%
+        &__descr
+            width: auto
+
+    .gallery
+        &__img
+            width: 100%
+
+    .testimonial
+        &__cards
+            grid-template-columns: auto
+
+    .info
+        &__title
+            font-size: 25px
+
+    .footer
+        &__start
+            flex-direction: column
+            justify-content: center
+        &__list
+            text-align: center
+            margin: 75px auto 0 auto
+            &:first-child
+                margin-top: 0
+            &:last-child
+                margin-left: 0
+        &__header
+            margin-bottom: 20px
+        &__address
+            font-size: 14px
+        &__phone
+            &-link
+                font-size: 14px
+
+@media (max-width: 480px)
+    .btn
+        padding: 7px 25px
+        &_size_l
+            padding: 10px 30px
+
+    .header
+        padding: 10px 0
+        &__btn
+            display: none
+
+    .hero
+        background-size: 275%
+        &__btns
+            display: flex
+            flex-direction: column
+            justify-content: center
+        &__btn
+            &:first-child
+                margin-right: 0
+            &:last-child
+                margin-top: 25px
+
+    .content
+        &__card
+            height: 500px
+
+@media (max-width: 350px)
+    .hero
+        background-size: 350%
